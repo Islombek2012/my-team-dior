@@ -1,0 +1,463 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Livvic';
+      font-weight: 600;
+      text-decoration: none;
+      list-style: none;
+}
+
+body {
+      overflow-x: hidden;
+}
+
+/* livvic-500italic - latin */
+@font-face {
+      font-display: swap;
+      /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Livvic';
+      font-style: italic;
+      font-weight: 500;
+      src: url('../fonts/livvic-v14-latin-500italic.woff2') format('woff2');
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* livvic-600 - latin */
+@font-face {
+      font-display: swap;
+      /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Livvic';
+      font-style: normal;
+      font-weight: 600;
+      src: url('../fonts/livvic-v14-latin-600.woff2') format('woff2');
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* livvic-700 - latin */
+@font-face {
+      font-display: swap;
+      /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Livvic';
+      font-style: normal;
+      font-weight: 700;
+      src: url('../fonts/livvic-v14-latin-700.woff2') format('woff2');
+      /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.container {
+      max-width: 1430px;
+      margin: 0 auto;
+      padding: 0 15px;
+}
+
+.header {
+      background-color: #014E56;
+      padding-top: 10px;
+
+      .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__left {
+                  display: flex;
+                  align-items: center;
+                  gap: 80px;
+
+                  img {
+                        cursor: pointer;
+                  }
+
+                  .nav__list {
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+
+                        a {
+                              font-family: Livvic;
+                              font-size: 18px;
+                              font-weight: 600;
+                              line-height: 28px;
+                              text-align: left;
+                              color: #fff;
+                              transition: 0.3s;
+                        }
+
+                        a:hover {
+                              color: #F67E7E;
+                        }
+                  }
+            }
+
+            &__right {
+                  .nav-btn {
+                        padding: 11px 33px;
+                        border: 2px solid #fff;
+                        border-radius: 30px;
+                        background-color: transparent;
+                        transition: 0.3s;
+                        font-family: Livvic;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        text-align: left;
+
+                        color: #fff;
+
+                        &:hover {
+                              background-color: white;
+                              color: #002529;
+                              cursor: pointer;
+                        }
+                  }
+
+
+
+
+            }
+      }
+
+      .main {
+            padding-top: 130px;
+            padding-bottom: 250px;
+            &__content {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  gap: 30px;
+
+                  &__left {
+                        max-width: 550px;
+
+                        h1 {
+                              font-family: Livvic;
+                              font-size: 100px;
+                              font-weight: 700;
+                              line-height: 100px;
+                              color: #fff;
+
+                        }
+
+                        span {
+                              font-family: Livvic;
+                              font-size: 100px;
+                              font-weight: 700;
+                              line-height: 100px;
+                              color: #F67E7E;
+                        }
+                  }
+
+                  &__right {
+
+                        .texts {
+                              max-width: 445px;
+                              margin-top: 79px;
+
+                              p {
+                                    font-size: 18px;
+                                    font-family: Livvic;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    line-height: 28px;
+                                    color: #fff;
+
+                              }
+                        }
+
+                  }
+            }
+      }
+}
+
+.section {
+      .sec1 {
+            padding: 140px 0;
+            background-color: #012F34;
+
+            &__content {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  gap: 125px;
+
+                  &__left {
+
+                        .texts2 {
+                              max-width: 445px;
+                              margin-top: 79px;
+
+                              h1 {
+                                    font-family: Livvic;
+                                    font-size: 48px;
+                                    font-weight: 700;
+                                    line-height: 48px;
+                                    color: #fff;
+                              }
+                        }
+                  }
+
+                  &__right {
+                        margin-top: 56px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 32px;
+
+                        .easy {
+                              display: flex;
+                              align-items: center;
+                              gap: 23px;
+
+                              .abou {
+                                    max-width: 445px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    text-align: top;
+                                    gap: 16px;
+
+                                    h2 {
+                                          font-family: Livvic;
+                                          font-size: 18px;
+                                          font-weight: 700;
+                                          line-height: 28px;
+                                          color: #F67E7E;
+                                    }
+
+                                    p {
+                                          font-family: Livvic;
+                                          font-size: 15px;
+                                          font-weight: 600;
+                                          line-height: 25px;
+                                          color: #fff;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+
+      .sec2 {
+            padding: 140px 0;
+            background-color: #004047;
+
+            &__content {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 56px;
+
+                  &__tex {
+                        max-width: 932px;
+
+                        h1 {
+                              font-family: Livvic;
+                              font-size: 48px;
+                              font-weight: 700;
+                              line-height: 48px;
+                              text-align: center;
+                              color: #fff;
+
+                              span {
+                                    color: #79C8C7;
+                              }
+                        }
+                  }
+
+                  &__cards {
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+
+                        .card {
+                              max-width: 350px;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              text-align: center;
+                              gap: 24px;
+
+                              .tex {
+                                    p {
+                                          font-size: 15px;
+                                          line-height: 25px;
+                                          font-weight: 600;
+                                          color: #fff;
+                                          z-index: 1;
+                                    }
+                              }
+
+                              .client {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 32px;
+
+                                    h3 {
+                                          font-size: 18px;
+                                          line-height: 28px;
+                                          color: #79C8C7;
+                                          font-weight: 600;
+                                    }
+
+                                    p {
+                                          font-size: 13px;
+                                          line-height: 18px;
+                                          color: #fff;
+                                          font-style: italic;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+
+      .sec3 {
+            padding: 76px 0;
+            background-color: #F67E7E;
+
+            &__content {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  &__left {
+                        max-width: 504px;
+
+                        h1 {
+                              font-size: 48px;
+                              line-height: 48px;
+                              color: #012F34;
+                              font-weight: 700;
+                        }
+                  }
+
+                  &__right {
+
+                        button {
+                              padding: 11px 33px;
+                              border: 2px solid #012F34;
+                              border-radius: 30px;
+                              background-color: transparent;
+                              transition: 0.3s;
+
+                              &:hover {
+                                    background-color: #012F34;
+                                    color: #fff;
+                                    cursor: pointer;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+.footer {
+      background-color: #002529;
+      padding: 48px 0;
+
+      &__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__left {
+                  display: flex;
+                  align-items: center;
+                  gap: 125px;
+
+                  .logo {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px;
+
+                        img {
+                              cursor: pointer;
+                        }
+
+                        &__list {
+                              display: flex;
+                              align-items: center;
+                              gap: 40px;
+
+                              a {
+                                    font-family: Livvic;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    line-height: 28px;
+                                    color: #fff;
+                                    transition: 0.3s;
+                              }
+
+                              a:hover {
+                                    color: #F67E7E;
+                              }
+
+                        }
+                  }
+
+                  .cantact {
+                        display: flex;
+                        flex-direction: column;
+
+                        p {
+                              font-family: Livvic;
+                              font-size: 15px;
+                              font-weight: 600;
+                              line-height: 25px;
+                              color: #fff;                              
+                              opacity: 0.6;
+                        }
+                  }
+            }
+
+            &__right {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  gap: 51px;
+
+                  .logos {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                  }
+
+                  .logos:hover img {
+                        cursor: pointer;
+                  }
+
+                  p {
+                        font-family: Livvic;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 25px;
+                        color: #fff;
+                        opacity: 0.6;
+                  }
+            }
+      }
+}
+.top-bottom{
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+      .first{
+            grid-row: 1;
+      }
+      .contant{
+            grid-row: 2;
+      }
+      .last{
+            grid-row: 3;
+      }
+}
