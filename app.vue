@@ -2,14 +2,13 @@ import { NuxtPage } from '#build/components';
 <template>
   <div class="top-bottom">
     <div class="first">
-      <NavComponent/>
+      <NavComponent />
     </div>
     <div class="contant">
-      <NuxtLayout/>
+      <NuxtLayout />
     </div>
     <div class="last">
-      <FooterCom/>
+      <FooterCom />
     </div>
-    
   </div>
 </template>
